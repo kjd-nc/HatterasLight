@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+ <path>Models/Maritime/Misc/HatterasLight.ac</path>
+
+ <!-- The Hatteras light is nominally visible for 23 miles (37 KM) -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>37000</max-m>
+ </animation>
+
+ <!-- Don't allow an aircraft to taxi over the lighthouse. -->
+ <animation>
+  <object-name>Flash1</object-name>
+  <object-name>Blank1</object-name>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+ 
+ <animation>
+  <type>alpha-test</type>
+  <alpha-factor>0.01</alpha-factor>
+ </animation>
+
+ <!-- Only show the illuminated objects when the sun is below the horizon -->
+ <animation>
+  <type>select</type>
+  <object-name>Flash1</object-name>
+  <object-name>Blank1</object-name>
+  <condition>
+   <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <!-- Flash the light --> 
+ <animation>
+ <type>timed</type>
+ <object-name>Flash1</object-name>
+ <object-name>Blank1</object-name>
+ <use-personality type="bool">true</use-personality>
+ <branch-duration-sec>6.5</branch-duration-sec> 
+<!-- <branch-duration-sec> 
+  <random>
+   <min>1.0</min>
+   <max>1.0</max>
+  </random>
+ </branch-duration-sec> -->
+ <branch-duration-sec>1.0</branch-duration-sec> 
+<!-- <branch-duration-sec>
+  <random>
+   <min>6.5</min>
+   <max>6.5</max>
+  </random>
+ </branch-duration-sec> -->
+</animation>
+
+</PropertyList>
