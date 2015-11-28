@@ -2,7 +2,7 @@
 
 <PropertyList>
 
- <path>Models/Maritime/Misc/HatterasLight.ac</path>
+ <path>HatterasLight.ac</path>
 
  <!-- The Hatteras light is nominally visible for 23 miles (37 KM) -->
  <animation>
