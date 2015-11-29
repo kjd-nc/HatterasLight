@@ -4,6 +4,13 @@
 
  <path>HatterasLight.ac</path>
 
+ <!-- Group the interior and exterior surfaces together -->
+ <animation>
+   <name>Flash1</name>
+   <object-name>Flash01</object-name>
+   <object-name>Flash02</object-name>
+ </animation>
+
  <!-- The Hatteras light is nominally visible for 23 miles (37 KM) -->
  <animation>
   <type>range</type>
@@ -42,20 +49,20 @@
  <object-name>Flash1</object-name>
  <object-name>Blank1</object-name>
  <use-personality type="bool">true</use-personality>
- <branch-duration-sec>6.5</branch-duration-sec> 
-<!-- <branch-duration-sec> 
+<!-- <branch-duration-sec>1.0</branch-duration-sec>  -->
+ <branch-duration-sec> 
   <random>
    <min>1.0</min>
    <max>1.0</max>
   </random>
- </branch-duration-sec> -->
- <branch-duration-sec>1.0</branch-duration-sec> 
-<!-- <branch-duration-sec>
+ </branch-duration-sec> 
+<!-- <branch-duration-sec>6.5</branch-duration-sec>   -->
+ <branch-duration-sec>
   <random>
    <min>6.5</min>
    <max>6.5</max>
-  </random>
- </branch-duration-sec> -->
+  </random> 
+ </branch-duration-sec> 
 </animation>
 
 </PropertyList>

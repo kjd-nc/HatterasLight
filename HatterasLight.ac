@@ -4975,7 +4975,7 @@ refs 3
 45 0 0
 kids 0
 OBJECT poly
-name "Flash1"
+name "Flash01"
 crease 97.5
 numvert 48
 -15.202318 60.310094 -1.064741
@@ -5470,7 +5470,7 @@ refs 3
 12 0 0
 kids 0
 OBJECT poly
-name "Flash1"
+name "Flash02"
 numvert 24
 -14.963948 60.310094 2.906550
 -14.404719 60.310094 -4.962408
