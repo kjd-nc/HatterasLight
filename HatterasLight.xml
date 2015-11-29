@@ -18,7 +18,7 @@
   <max-m>37000</max-m>
  </animation>
 
- <!-- Don't allow an aircraft to taxi over the lighthouse. -->
+ <!-- Make the light beam not-solid so aircraft can't crash into it -->
  <animation>
   <object-name>Flash1</object-name>
   <object-name>Blank1</object-name>
